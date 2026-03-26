@@ -24,7 +24,7 @@ For commercial and non-commercial use, preserve the attribution to the original 
 
 ### Instructions
 
-- `instructions/tone.instructions.md`: answer in the user's language, keep documentation and code in English by default, and stay concise unless asked otherwise.
+- `instructions/tone.instructions.md`: prioritize an explicit requested response language, otherwise follow the current user message language, keep documentation and code in English by default, and stay concise unless the task needs more depth.
 
 ### Prompts
 
