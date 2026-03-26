@@ -2,6 +2,14 @@
 
 Personal GitHub Copilot agents, skills, and instructions, stored in one repo and linked into `~/.copilot/`.
 
+## License
+
+This repository is licensed under Apache-2.0.
+
+If you redistribute this project or derivative works, keep the `LICENSE` and `NOTICE` files.
+For commercial and non-commercial use, preserve the attribution to the original source:
+`https://github.com/francho-plain/francho-copilot`
+
 
 ## Current Configurations
 
