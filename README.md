@@ -15,12 +15,13 @@ For commercial and non-commercial use, preserve the attribution to the original 
 
 ### Agents
 
-- `code-cop.agent.md`: read-only security review agent for dependency, license, code, and configuration risk analysis.
+- `code-cop.agent.md`: read-only security review agent for dependency, license, code, and configuration risk analysis. Includes Node.js-specific checks for `ignore-scripts` and pnpm `minimumReleaseAge`.
 - `python-databricks-coach.agent.md`: Python coaching and code review agent focused on Python quality, Databricks Apps, and professional engineering practices.
 
 ### Skills
 
-- `skills/english-teacher/`: adds brief English corrections when the user writes in English.
+- `skills/english-teacher/`: adds a brief English prompt-quality score and, when useful, short English corrections when the user writes in English.
+- `skills/security-audit/`: automated security audit that detects fresh clones vs. pulled changes and delegates to the Code Cop agent for the appropriate scope of analysis.
 
 ### Instructions
 

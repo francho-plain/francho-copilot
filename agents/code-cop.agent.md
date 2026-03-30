@@ -57,6 +57,25 @@ When given a project or repository, produce a structured security report coverin
 - Flag any script that downloads and executes remote code.
 - Warn about obfuscated code.
 
+### 7. Node.js Specific Checks
+
+If `package.json` exists, apply these additional security checks:
+
+#### npm: ignore-scripts
+
+- Check `.npmrc` for `ignore-scripts=true`.
+- This prevents arbitrary code execution during `npm install`.
+- If **missing or set to `false`**, flag as **🔴 HIGH** severity — install scripts are a common supply chain attack vector.
+
+#### pnpm: minimumReleaseAge
+
+If `pnpm-lock.yaml` exists (pnpm project):
+
+- Check `.npmrc`, `package.json` (under `pnpm` config), or `pnpm-workspace.yaml` for `minimumReleaseAge`.
+- Required: `minimumReleaseAge: 1440` (24 hours) **or higher**.
+- This blocks freshly published packages, mitigating typosquatting and hijack attacks.
+- If **absent or below 1440**, flag as **🟡 MEDIUM** severity.
+
 ## Report Format
 
 End every analysis with a clear verdict:
