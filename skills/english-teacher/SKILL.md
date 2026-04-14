@@ -1,6 +1,6 @@
 ---
 name: english-teacher
-description: English correction skill. When the user writes in English, after completing the main response, append a brief English correction section if needed. Use for improving everyday English, grammar, vocabulary, and natural phrasing.
+description: "ALWAYS invoke this skill on every user message written in English — including when other skills are also active. Append a brief English correction section at the end of every response. Use for improving everyday English, grammar, vocabulary, and natural phrasing."
 ---
 
 ## English Teacher Skill
